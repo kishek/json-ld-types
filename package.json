@@ -1,0 +1,59 @@
+{
+  "name": "json-ld-types",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watch",
+    "lint:eslint": "eslint 'src/*.ts' '*.js'",
+    "lint:fix": "yarn lint:eslint --fix && yarn lint:prettier --write",
+    "lint:prettier": "prettier 'src/*.ts'",
+    "lint": "yarn lint:eslint && yarn lint:prettier --check"
+  },
+  "contributors": [
+    {
+      "name": "Samuel Xu",
+      "email": "sxu@atlassian.com"
+    },
+    {
+      "name": "Abhinav Kishore",
+      "email": "akishore@atlassian.com"
+    }
+  ],
+  "main": "src/index.ts",
+  "dependencies": {
+    "schema-dts": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kishek/json-ld-types.git"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "package.json",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "publishConfig": {
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "typings": "dist/index.d.ts"
+  },
+  "types": "src/index.ts",
+  "typings": "src/index.ts"
+}

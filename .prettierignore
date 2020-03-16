@@ -1,0 +1,14 @@
+# Ignore generated tsconfig.json files.
+**/tsconfig.json
+
+# Ignore generated changelog files.
+**/CHANGELOG.md
+
+# Ignore generated build files.
+**/dist/**
+
+# Ignore coverage.
+coverage/**
+
+# Ignore vscode config
+.vscode
